@@ -9,3 +9,11 @@ Car::Car(std::string nm, int sp, int dst)
        << "Speed: " << speed << endl
        << "Distance: " << distance << endl;
 }
+
+void Car::drive(int turns) {
+  distance += speed * turns;
+}
+
+int Car::getDistance() const {
+  return distance;
+}

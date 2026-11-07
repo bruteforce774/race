@@ -8,4 +8,6 @@ class Car {
     int distance;
   public:
     Car(std::string nm, int sp, int dst);
+    void drive(int turns);
+    int getDistance() const;
 };
